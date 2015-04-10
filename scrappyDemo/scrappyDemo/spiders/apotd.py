@@ -1,8 +1,10 @@
+# checks current APOTD website for title. return title and URL
+
 import scrapy
 from scrappyDemo.items import Website
 
 class aptod(scrapy.Spider):
-    name = "aptod"
+    name = "apotd"
     allowed_domains = ["apod.nasa.gov"]
     start_urls = [ "http://apod.nasa.gov/apod/astropix.html" ]
 
